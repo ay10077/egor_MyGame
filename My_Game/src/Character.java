@@ -1,14 +1,14 @@
 import java.util.Scanner;
-
+import java.sql.Timestamp;
 //
 public class Character {
 	String name;
 	int age;
-	long date_of_birth;
+	Timestamp date_of_birth;
 	String country;
 	String city;
 	Scanner in = new Scanner(System.in);
-	public Character(String name, int age, long date_of_birth, String country, String city){
+	public Character(String name, int age, Timestamp date_of_birth, String country, String city){
 		this.name = name;
 		this.age = age;
 		this.date_of_birth = date_of_birth;
@@ -24,7 +24,7 @@ public class Character {
 	public int getAge() {
 		return age;
 	}
-	public long getDate_of_birth() {
+	public Timestamp getDate_of_birth() {
 		return date_of_birth;
 	}
 	public String getCountry() {
